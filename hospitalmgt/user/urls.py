@@ -34,11 +34,11 @@ urlpatterns = [
 
     # billing
 
-    # path('add_billing_record/<int:patient_id>/', views.add_billing_record, name='add_billing_record'),
-    # path('update_billing_record/<int:billing_record_id>/', views.update_billing_record, name='update_billing_record'),
-    # path('delete_billing_record/<int:billing_record_id>/', views.delete_billing_record, name='delete_billing_record'),
-    # path('patient_billing_history/<int:patient_id>/', views.get_patient_billing_history, name='patient_billing_history'),
-    # path('search_billing_records/', views.search_billing_records, name='search_billing_records'),
+    path('add_billing_record/<int:patient_id>/', views.add_billing_record, name='add_billing_record'),
+    path('update_billing_record/<int:billing_record_id>/', views.update_billing_record, name='update_billing_record'),
+    path('delete_billing_record/<int:billing_record_id>/', views.delete_billing_record, name='delete_billing_record'),
+    path('patient_billing_history/<int:patient_id>/', views.get_patient_billing_history, name='patient_billing_history'),
+    path('search_billing_records/', views.search_billing_records, name='search_billing_records'),
 
 
    
