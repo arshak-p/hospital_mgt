@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header Styling */
+header {
+    background-color: #0984ff; /* Dark background for the header */
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation buttons in the header */
+header .btn {
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #ffffff;
+    color: #343a40;
+    border-color: #ffffff;
+}
+
+/* Container for Header content */
+header .container {
+    max-width: 1200px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer .container p {
+    margin: 0;
+}
+
+/* Main Content Section */
+.container-fluid {
+    margin-top: 30px;
+}
+
+/* Button Group - Responsive */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.d-flex a.btn {
+    margin-right: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .d-flex {
+        justify-content: center;
+    }
+
+    .d-flex a.btn {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    header .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}

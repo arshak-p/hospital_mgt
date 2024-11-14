@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container text-center">
+        <h2>Welcome to Our Hospital</h2>
+        <p>Manage your tasks by selecting your role below:</p>
+    </div>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong></strong>{{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <main class="container my-5">
+        <div class="row text-center">
+            <div class="col-12 mb-4">
+                <h2>Select Your Role</h2>
+            </div>
+            <div class="col-md-3 mb-3">
+                <button class="btn btn-primary w-100" onclick="location. href='/admin_dashboard'">Admin</button>
+            </div>
+            <div class="col-md-3 mb-3">
+                <button class="btn btn-secondary w-100" onclick="location.href='/receptionist_dashboard'">Reception</button>
+            </div>
+            <div class="col-md-3 mb-3">
+                <button class="btn btn-success w-100" onclick="location.href='/billing_Staf_dashboard'">Billing Staff</button>
+            </div>
+            <div class="col-md-3 mb-3">
+                <button class="btn btn-info w-100" onclick="location.href='/signout'">long out</button>
+            </div>
+        </div>
+    </main>
+    <br>
+{% endblock %}
